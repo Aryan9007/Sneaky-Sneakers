@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "name": "Nike Air Force 1 '07 LV8",
+        "price": "€129,99",
+        "merk": "nike",
+        "gender": "male",
+        "photo1": "nikephotos/airforce1.png",
+        "photo2": "nikephotos/airforce2.png",
+        "photo3": "nikephotos/airforce3.png"
+    },
+    {
+        "id": "2",
+        "name": "Air Jordan 1 Mid Light Smoke Grey Anthracite",
+        "price": "€166",
+        "merk": "nike",
+        "gender": "male",
+        "photo1": "nikephotos/airjordan1.png",
+        "photo2": "nikephotos/airjordan2.png",
+        "photo3": "nikephotos/airjordan3.png"
+    },
+    {
+        "id": "3",
+        "name": "Nike Dunk High White Black",
+        "price": "€195",
+        "merk": "nike",
+        "gender": "male",
+        "photo1": "nikephotos/jordanpanda1.webp",
+        "photo2": "nikephotos/jordanpanda2.webp",
+        "photo3": "nikephotos/jordanpanda3.webp"
+    }
+]
