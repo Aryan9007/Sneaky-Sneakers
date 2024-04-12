@@ -17,3 +17,12 @@ Adidas:
 4: https://www.adidas.nl/forum-bold-stripes-schoenen/ID6843.html
 5: https://www.adidas.nl/ultrabounce-schoenen/HP5788.html
 6: https://www.adidas.nl/vl-court-bold-schoenen/IH9996.html
+
+
+
+
+<!-- card.addEventListener('click', (event) => {
+ event.preventDefault();
+ console.log('Clicked on car card:', item.id);
+ window.location.href = `inspect.html?id=${item.id}`;
+}); -->
