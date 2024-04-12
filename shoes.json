@@ -1,7 +1,7 @@
 [
     {
         "id": "1",
-        "name": "Nike Air Force 1 '07 LV8",
+        "name": "Nike Air Force 1 Low 07 White",
         "price": "€129,99",
         "merk": "nike",
         "gender": "male",
@@ -13,7 +13,7 @@
         "id": "2",
         "name": "Air Jordan 1 Mid Light Smoke Grey Anthracite",
         "price": "€166",
-        "merk": "nike",
+        "merk": "jordan",
         "gender": "male",
         "photo1": "nikephotos/airjordan1.png",
         "photo2": "nikephotos/airjordan2.png",
@@ -33,7 +33,7 @@
         "id": "4",
         "name": "Air Jordan 4 Retro Military Black",
         "price": "€460",
-        "merk": "nike",
+        "merk": "jordan",
         "gender": "male",
         "photo1": "nikephotos/jordan4-1.png",
         "photo2": "nikephotos/jordan4-2.png",
