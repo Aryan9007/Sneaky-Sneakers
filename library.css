@@ -30,7 +30,7 @@ body {
     height: 30px;
 }
 
-.card-row {
+.Productarea {
     display: flex;
     flex-wrap: wrap;
     /* justify-content: space-around; */
@@ -108,4 +108,9 @@ body {
 
 .jordanfilter:hover, .nikefilter:hover, .adidasfilter:hover {
     transform: scale(1.1);
+}
+
+.card-info a {
+    color: black;
+    text-decoration: none;
 }
