@@ -53,7 +53,30 @@ function populateShoeDetails(shoe) {
     }
 }
 
-// Function to handle thumbnail hover
 function handleThumbnailHover(thumbnailSrc) {
     document.getElementById('shoe-image').src = thumbnailSrc;
 }
+
+fetch('shoes.json')
+    .then(response => response.json())
+    .then(data => {
+        const sizes = data[0].sizes;
+
+        sizes.forEach(size => {
+            const button = document.createElement('button');
+            button.classList.add('size-button');
+            button.textContent = size;
+            button.addEventListener('click', function () {
+                const buttons = document.querySelectorAll('.size-button');
+                buttons.forEach(btn => btn.classList.remove('selected'));
+
+                button.classList.add('selected');
+
+                const selectedSize = size;
+                console.log('Selected size:', selectedSize);
+            });
+            document.getElementById('size-options').appendChild(button);
+        });
+    })
+    .catch(error => console.error('Error fetching shoe sizes:', error));
+
