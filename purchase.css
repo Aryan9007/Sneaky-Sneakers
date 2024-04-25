@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #C4B5AA;
+    color: #fff;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.nav-links a:hover {
+    color: #eeeeee;
+}
+
+.shopping-cart img {
+    height: 30px;
+}
+
+/* End navbar */
+
+.purchase-text {
+    /* margin-top: 40px; */
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+.home-button {
+    background-color: #C4B5AA;
+    color: #fff;
+    padding: 20px 90px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+    top: 50px;
+}
+.home-button:hover {
+background-color: #a1988a;
+}

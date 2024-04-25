@@ -2,7 +2,7 @@
     {
         "id": "1",
         "name": "Nike Air Force 1 Low 07 White",
-        "price": "€129,99",
+        "price": "129,99",
         "merk": "nike",
         "gender": "male",
         "photo1": "nikephotos/airforce1.png",
@@ -13,7 +13,7 @@
     {
         "id": "2",
         "name": "Air Jordan 1 Mid Light Smoke Grey Anthracite",
-        "price": "€166",
+        "price": "166",
         "merk": "jordan",
         "gender": "male",
         "photo1": "nikephotos/airjordan1.png",
@@ -24,7 +24,7 @@
     {
         "id": "3",
         "name": "Nike Dunk High White Black",
-        "price": "€195",
+        "price": "195",
         "merk": "nike",
         "gender": "male",
         "photo1": "nikephotos/jordanpanda1.webp",
@@ -35,7 +35,7 @@
     {
         "id": "4",
         "name": "Air Jordan 4 Retro Military Black",
-        "price": "€460",
+        "price": "460",
         "merk": "jordan",
         "gender": "male",
         "photo1": "nikephotos/jordan4-1.png",
@@ -46,7 +46,7 @@
     {
         "id": "5",
         "name": "Air Jordan 1 Low University Blue Grey (W)",
-        "price": "€210",
+        "price": "210",
         "merk": "nike",
         "gender": "female",
         "photo1": "nikephotos/dunks1.png",
@@ -57,7 +57,7 @@
     {
         "id": "6",
         "name": "W Air Max 270",
-        "price": "€520",
+        "price": "520",
         "merk": "nike",
         "gender": "male",
         "photo1": "nikephotos/airmax1.png",
@@ -68,7 +68,7 @@
     {
         "id": "7",
         "name": "GRAND COURT CLOUDFOAM COMFORT SCHOENEN",
-        "price": "€80",
+        "price": "80",
         "merk": "adidas",
         "gender": "male",
         "photo1": "adidasphotos/grandcourt1.avif",
@@ -79,7 +79,7 @@
     {
         "id": "8",
         "name": "GAZELLE SCHOENEN",
-        "price": "€110",
+        "price": "110",
         "merk": "adidas",
         "gender": "male",
         "photo1": "adidasphotos/gazelle1.avif",
@@ -90,7 +90,7 @@
     {
         "id": "9",
         "name": "NMD_R1 PRIMEBLUE SCHOENEN",
-        "price": "€150",
+        "price": "150",
         "merk": "adidas",
         "gender": "male",
         "photo1": "adidasphotos/NMD1.avif",
@@ -101,7 +101,7 @@
     {
         "id": "10",
         "name": "FORUM BOLD STRIPES SCHOENEN",
-        "price": "€120",
+        "price": "120",
         "merk": "adidas",
         "gender": "male",
         "photo1": "adidasphotos/forum1.avif",
@@ -112,7 +112,7 @@
     {
         "id": "11",
         "name": "ULTRABOUNCE SCHOENEN",
-        "price": "€90",
+        "price": "90",
         "merk": "adidas",
         "gender": "female",
         "photo1": "adidasphotos/ultrabounce1.avif",
@@ -123,7 +123,7 @@
     {
         "id": "12",
         "name": "VL COURT BOLD SCHOENEN",
-        "price": "€80",
+        "price": "80",
         "merk": "adidas",
         "gender": "female",
         "photo1": "adidasphotos/court1.avif",

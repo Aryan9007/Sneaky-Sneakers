@@ -40,7 +40,7 @@ async function krijgproducten(brand = null) {
                     <img src="${item.photo3}" alt="${item.name}" class="thumbnail-image" data-src="${item.photo3}">
                 </div>
                 <a href="inspect.html?id=${item.id}"><h2>${item.name}</h2></a>
-                <a href="inspect.html?id=${item.id}"><p>${item.price}</p></a>
+                <a href="inspect.html?id=${item.id}"><p>€${item.price}</p></a>
             </div>
         `;
             alles.appendChild(listItem);
@@ -81,5 +81,4 @@ document.querySelector('.jordanfilter').addEventListener('click', function () {
     krijgproducten('jordan');
 });
 
-// Load all products initially
 krijgproducten();
