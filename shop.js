@@ -38,19 +38,19 @@ function updateCartDisplay() {
     const purchaseButton = document.querySelector('.pay-button');
     if (cartItems.length === 0) {
         purchaseButton.disabled = true;
-        purchaseButton.style.backgroundColor = '#ccc'; // Change button color to indicate disabled state
+        purchaseButton.style.backgroundColor = '#ccc';
         purchaseButton.removeEventListener('click', handlePurchase);
     } else {
         purchaseButton.disabled = false;
-        purchaseButton.style.backgroundColor = '#C4B5AA'; // Restore button color
+        purchaseButton.style.backgroundColor = '#C4B5AA';
         purchaseButton.addEventListener('click', handlePurchase);
     }
 }
 
 function handlePurchase() {
+    localStorage.setItem('purchaseItems', localStorage.getItem('cartItems'));
     localStorage.removeItem('cartItems');
     updateCartDisplay();
-    // Redirect to purchase page
     window.location.href = "purchase.html";
 }
 

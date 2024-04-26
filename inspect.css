@@ -145,8 +145,8 @@ body {
     background-color: #f0f0f0;
 }
 .size-button.selected {
-    background-color: #f0f0f0; /* Change background color for selected button */
-    font-weight: bold; /* Make the text bold for selected button */
+    background-color: #f0f0f0;
+    font-weight: bold;
 }
 
 .button-shop {

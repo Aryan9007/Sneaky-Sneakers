@@ -8,7 +8,8 @@
         "photo1": "nikephotos/airforce1.png",
         "photo2": "nikephotos/airforce2.png",
         "photo3": "nikephotos/airforce3.png",
-        "sizes": ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47"]
+        "sizes": ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47"],
+        "disabled": false
     },
     {
         "id": "2",
@@ -19,7 +20,8 @@
         "photo1": "nikephotos/airjordan1.png",
         "photo2": "nikephotos/airjordan2.png",
         "photo3": "nikephotos/airjordan3.png",
-        "sizes": ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47"]
+        "sizes": ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47"],
+        "disabled": false
     },
     {
         "id": "3",
@@ -30,7 +32,8 @@
         "photo1": "nikephotos/jordanpanda1.webp",
         "photo2": "nikephotos/jordanpanda2.webp",
         "photo3": "nikephotos/jordanpanda3.webp",
-        "sizes": ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47"]
+        "sizes": ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47"],
+        "disabled": false
     },
     {
         "id": "4",
@@ -41,7 +44,8 @@
         "photo1": "nikephotos/jordan4-1.png",
         "photo2": "nikephotos/jordan4-2.png",
         "photo3": "nikephotos/jordan4-3.png",
-        "sizes": ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47"]
+        "sizes": ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47"],
+        "disabled": false
     },
     {
         "id": "5",
@@ -52,7 +56,8 @@
         "photo1": "nikephotos/dunks1.png",
         "photo2": "nikephotos/dunks2.png",
         "photo3": "nikephotos/dunks3.png",
-        "sizes": ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47"]
+        "sizes": ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47"],
+        "disabled": false
     },
     {
         "id": "6",
@@ -63,7 +68,8 @@
         "photo1": "nikephotos/airmax1.png",
         "photo2": "nikephotos/airmax2.png",
         "photo3": "nikephotos/airmax3.png",
-        "sizes": ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47"]
+        "sizes": ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47"],
+        "disabled": false
     },
     {
         "id": "7",
@@ -74,7 +80,8 @@
         "photo1": "adidasphotos/grandcourt1.avif",
         "photo2": "adidasphotos/grandcourt2.avif",
         "photo3": "adidasphotos/grandcourt3.avif",
-        "sizes": ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47"]
+        "sizes": ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47"],
+        "disabled": false
     },
     {
         "id": "8",
@@ -85,7 +92,8 @@
         "photo1": "adidasphotos/gazelle1.avif",
         "photo2": "adidasphotos/gazelle2.avif",
         "photo3": "adidasphotos/gazelle3.avif",
-        "sizes": ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47"]
+        "sizes": ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47"],
+        "disabled": false
     },
     {
         "id": "9",
@@ -96,7 +104,8 @@
         "photo1": "adidasphotos/NMD1.avif",
         "photo2": "adidasphotos/NMD2.avif",
         "photo3": "adidasphotos/NMD3.avif",
-        "sizes": ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47"]
+        "sizes": ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47"],
+        "disabled": false
     },
     {
         "id": "10",
@@ -107,7 +116,8 @@
         "photo1": "adidasphotos/forum1.avif",
         "photo2": "adidasphotos/forum2.avif",
         "photo3": "adidasphotos/forum3.avif",
-        "sizes": ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47"]
+        "sizes": ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47"],
+        "disabled": false
     },
     {
         "id": "11",
@@ -118,7 +128,8 @@
         "photo1": "adidasphotos/ultrabounce1.avif",
         "photo2": "adidasphotos/ultrabounce2.avif",
         "photo3": "adidasphotos/ultrabounce3.avif",
-        "sizes": ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47"]
+        "sizes": ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47"],
+        "disabled": false
     },
     {
         "id": "12",
@@ -129,6 +140,7 @@
         "photo1": "adidasphotos/court1.avif",
         "photo2": "adidasphotos/court2.avif",
         "photo3": "adidasphotos/court3.avif",
-        "sizes": ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47"]
+        "sizes": ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47"],
+        "disabled": false
     }
 ]

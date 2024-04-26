@@ -1,13 +1,13 @@
 async function getProductData() {
     try {
-        let data = localStorage.getItem("shoeData");
+        let data = localStorage.getItem("data");
         if (!data) {
             const response = await fetch('shoes.json');
             if (!response.ok) {
                 throw new Error('Failed to fetch shoe data');
             }
             data = await response.json();
-            localStorage.setItem("shoeData", JSON.stringify(data));
+            localStorage.setItem("data", JSON.stringify(data));
             console.log("Shoe data fetched and stored in local storage.");
         } else {
             data = JSON.parse(data);
@@ -114,11 +114,4 @@ addToCartButton.addEventListener('click', async function () {
     }
 });
 
-
-
-
 populateProductDetails();
-
-
-
-

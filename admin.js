@@ -26,7 +26,7 @@ async function krijgproducten(brand = null) {
     alles.innerHTML = '';
     for (let i = 0; i < data.length; i++) {
         const item = data[i];
-        if ((!brand || item.merk === brand) && !item.disabled) {
+        if (!brand || item.merk === brand) {
             const listItem = document.createElement('div');
             listItem.classList.add('card');
             listItem.innerHTML = `
@@ -39,8 +39,11 @@ async function krijgproducten(brand = null) {
                     <img src="${item.photo2}" alt="${item.name}" class="thumbnail-image" data-src="${item.photo2}">
                     <img src="${item.photo3}" alt="${item.name}" class="thumbnail-image" data-src="${item.photo3}">
                 </div>
-                <a href="inspect.html?id=${item.id}"><h2>${item.name}</h2></a>
-                <a href="inspect.html?id=${item.id}"><p>€${item.price}</p></a>
+                <h2>${item.name}</h2>
+                <p>€${item.price}</p>
+                <a href="edit.html?id=${item.id}" class="edit-button">Edit</a>
+                ${item.disabled ? `<button onclick="enablebtn(${item.id})" class="enable-btn">Enable</button>` :
+        `<button onclick="disablebtn(${item.id})" class="disable-btn">Disable</button>`}
             </div>
         `;
             alles.appendChild(listItem);
@@ -63,21 +66,70 @@ async function krijgproducten(brand = null) {
     });
 }
 
-document.querySelector('a[href="#allsneaker"]').addEventListener('click', function (event) {
-    event.preventDefault();
+async function disablebtn(id) {
+    console.log("disablebtn", id);
+    const data = JSON.parse(localStorage.getItem("data"));
+    console.log("data", data);
+    const itemData = data.find(item => item.id === JSON.stringify(id));
+    console.log("itemData", itemData);
+    if (itemData) {
+        itemData.disabled = true;
+        localStorage.setItem("data", JSON.stringify(data));
+        await krijgproducten();
+    } else {
+        console.log("Item not found");
+    }
+    await krijgproducten();
+}
+async function enablebtn(id) {
+    console.log("enablebtn", id);
+    const data = JSON.parse(localStorage.getItem("data"));
+    console.log("data", data);
+    const itemData = data.find(item => item.id === JSON.stringify(id));
+    console.log("itemData", itemData);
+    if (itemData) {
+        itemData.disabled = false;
+        localStorage.setItem("data", JSON.stringify(data));
+        await krijgproducten();
+    } else {
+        console.log("Item not found");
+    }
+    await krijgproducten();
+}
+
+function addcart() {
+    const data = JSON.parse(localStorage.getItem("data"));
+    const item = {};
+    for (let i = 0; i < data.length + 1; i++) {
+        if (data.find(items => parseInt(items.id, 10) === i + 1) === undefined) {
+            item.id = i + 1;
+            break;
+        }
+    }
+    console.log(item.id);
+    item.id = JSON.stringify(item.id);
+    item.name = "In Progress";
+    item.price = 0;
+    item.size = "In Progress";
+    item.photo1 = "(Img location)";
+    item.photo2 = "(Img location)";
+    item.photo3 = "(Img location)";
+    item.disabled = true;
+    data.push(item);
+    localStorage.setItem("data", JSON.stringify(data));
     krijgproducten();
-});
+}
+function reset() {
+    localStorage.removeItem("data");
+    krijgproducten();
+}
 
-document.querySelector('.nikefilter').addEventListener('click', function () {
-    krijgproducten('nike');
-});
-
-document.querySelector('.adidasfilter').addEventListener('click', function () {
-    krijgproducten('adidas');
-});
-
-document.querySelector('.jordanfilter').addEventListener('click', function () {
-    krijgproducten('jordan');
+document.addEventListener("keydown", function (event) {
+    if (event.key === "c") {
+        console.log("clear");
+        localStorage.clear();
+        krijgproducten();
+    }
 });
 
 krijgproducten();
