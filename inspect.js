@@ -106,6 +106,7 @@ addToCartButton.addEventListener('click', async function () {
             // Store updated cart items in local storage
             localStorage.setItem('cartItems', JSON.stringify(cartItems));
             console.log('Item added to cart:', selectedItem);
+            window.location.href = 'library.html';
         } else {
             console.log('Shoe with ID ' + shoeId + ' not found.');
         }

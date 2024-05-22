@@ -48,10 +48,27 @@ function updateCartDisplay() {
 }
 
 function handlePurchase() {
-    localStorage.setItem('purchaseItems', localStorage.getItem('cartItems'));
+    const purchaseItems = JSON.parse(localStorage.getItem('purchaseItems')) || [];
+    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+    let orderCount = parseInt(localStorage.getItem('orderCount'), 10) || 0;
+    orderCount += 1;
+    localStorage.setItem('orderCount', orderCount);
+
+    const timestamp = new Date().toISOString();
+    const itemsWithOrderNumber = cartItems.map(item => ({
+        ...item,
+        orderNumber: orderCount,
+        timestamp,
+    }));
+
+    localStorage.setItem('purchaseItems', JSON.stringify(itemsWithOrderNumber.concat(purchaseItems)));
     localStorage.removeItem('cartItems');
     updateCartDisplay();
     window.location.href = "purchase.html";
 }
 
+
 updateCartDisplay();
+
+

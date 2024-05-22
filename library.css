@@ -117,3 +117,15 @@ body {
     color: black;
     text-decoration: none;
 }
+
+.cart-indicator {
+    position: absolute;
+    top: 11px;
+    right: 13px;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    display: none; /* Hidden by default */
+  }
+  

@@ -14,7 +14,6 @@ async function Product() {
     }
 }
 
-
 async function krijgproducten(brand = null) {
     let data;
     if (localStorage.getItem("data")) {
@@ -81,3 +80,24 @@ document.querySelector('.jordanfilter').addEventListener('click', function () {
 });
 
 krijgproducten();
+
+function updateCartIndicator() {
+    const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+    const cartIcon = document.querySelector('.shopping-cart a');
+    if (cartItems.length > 0) {
+        let indicator = document.querySelector('.cart-indicator');
+        if (!indicator) {
+            indicator = document.createElement('div');
+            indicator.classList.add('cart-indicator');
+            cartIcon.appendChild(indicator);
+        }
+        indicator.style.display = 'block';
+    } else {
+        const indicator = document.querySelector('.cart-indicator');
+        if (indicator) {
+            indicator.style.display = 'none';
+        }
+    }
+}
+
+updateCartIndicator();

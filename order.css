@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #C4B5AA;
+    color: #fff;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.nav-links a:hover {
+    color: #eeeeee;
+}
+
+.shopping-cart img {
+    height: 30px;
+}
+
+
+.orders-container {
+    margin: 20px;
+}
+
+.orders-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.order-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    gap: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.order-item img {
+    width: 100px;
+    height: auto;
+}
+
+.order-item h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.order-item p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.complete-button {
+    background-color: #C4B5AA;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.complete-button:hover {
+    background-color: #a1988a;
+}
+
+.orderNumber {
+position: absolute;
+right: 15%;
+}
