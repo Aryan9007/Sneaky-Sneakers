@@ -3,7 +3,7 @@
 <h2>The pages</h2>
 
 I have been working on my project. For this project i have made a webshop about shoes.
-I have made a Visiterpage and a Adminpage
+I have made a <a href="https://aryan9007.github.io/Sneaky-Sneakers/">Visiterpage</a> and a <a href="https://aryan9007.github.io/Sneaky-Sneakers/admin.html">Adminpage</a>
 
 
 How to use the visiterpage
