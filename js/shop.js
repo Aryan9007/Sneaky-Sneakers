@@ -13,7 +13,7 @@ function updateCartDisplay() {
                     <h3>${item.name}</h3>
                     <p>Size: ${item.size}</p>
                     <p>Price: €${item.price}</p>
-                    <button class="delete-button" data-index="${index}">Delete</button>
+                    <button class="delete-button" data-index="${index}">Remove</button>
                 </div>
             </div>
         `;
