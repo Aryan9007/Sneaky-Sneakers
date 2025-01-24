@@ -29,4 +29,4 @@ saveBtn.addEventListener('click', function () {
 const cancelBtn = document.getElementById('cancel-btn');
 cancelBtn.addEventListener('click', function () {
     window.location.href = "admin.html";
-});
+}); 
