@@ -26,6 +26,7 @@ saveBtn.addEventListener('click', function () {
     window.location.href = "admin.html";
 });
 
+
 const cancelBtn = document.getElementById('cancel-btn');
 cancelBtn.addEventListener('click', function () {
     window.location.href = "admin.html";
